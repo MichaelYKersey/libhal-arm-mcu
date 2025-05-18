@@ -411,6 +411,7 @@ protected:
 template<peripheral select>
 class advanced_timer final : public advanced_timer_manager
 {
+public:
   static_assert(
     select == peripheral::timer1 or select == peripheral::timer8,
     "Only timer 1 or 8 is allowed as advanced timers for this driver.");
